@@ -3,7 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Compliance | SOC2, ISO 27001 & Compliance Experts</title>
+    <title>SOC 2 Audit & ISO 27001 Compliance Services | Mr. Compliance</title>
+    <meta name="description" content="Expert SOC 2 audit and ISO 27001 compliance services for US companies. Get certified in 8 weeks with 100% pass rate. 200+ companies certified. Free consultation.">
+    <meta name="keywords" content="SOC 2 audit, ISO 27001 compliance, SOC 2 certification, compliance consultant, security audit, HIPAA compliance, PCI DSS, GDPR compliance">
+    <link rel="canonical" href="https://www.mrcompliance.co/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mrcompliance.co/">
+    <meta property="og:title" content="SOC 2 Audit & ISO 27001 Compliance Services | Mr. Compliance">
+    <meta property="og:description" content="Expert SOC 2 audit and ISO 27001 compliance services for US companies. Get certified in 8 weeks with 100% pass rate.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SOC 2 Audit & ISO 27001 Compliance Services">
+    <meta name="twitter:description" content="Expert SOC 2 audit and ISO 27001 compliance services for US companies.">
+    
+    <!-- Geo Tags for US Market -->
+    <meta name="geo.region" content="US">
+    <meta name="geo.placename" content="United States">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Mr. Compliance",
+      "description": "SOC 2, ISO 27001, and compliance consulting services",
+      "url": "https://www.mrcompliance.co",
+      "telephone": "+1-XXX-XXX-XXXX",
+      "email": "support@mrcompliance.co",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": [
+        "SOC 2 Audit",
+        "ISO 27001 Certification",
+        "Compliance Consulting",
+        "Security Audit",
+        "HIPAA Compliance",
+        "PCI DSS Compliance"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "200"
+      }
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -224,30 +277,242 @@
             font-size: 18px;
             color: #475569;
             transition: transform 0.3s;
+            position: relative;
         }
         
         .logo-item:hover {
             transform: scale(1.05);
         }
         
-        .logo-enablen { color: #7CB342; }
-        .logo-omni { color: #2196F3; }
-        .logo-employee { color: #00838F; }
-        .logo-eendorsements { color: #1976D2; }
-        .logo-automynd { color: #26C6DA; }
-        .logo-portqii { color: #D32F2F; font-weight: 700; }
-        .logo-datagain { color: #1565C0; }
-        .logo-kubo { color: #0277BD; }
-        .logo-nami { color: #212121; font-weight: 700; }
-        .logo-scrambleid { color: #F57C00; }
-        .logo-stakater { background: #212121; color: white; padding: 10px 20px; border-radius: 4px; }
-        .logo-madtech { color: #212121; font-weight: 700; letter-spacing: 1px; }
-        .logo-nexus { color: #424242; font-weight: 300; }
-        .logo-vamu { color: #1E88E5; font-weight: 300; letter-spacing: 3px; }
-        .logo-tukatek { background: #212121; color: white; padding: 10px 20px; border-radius: 4px; }
-        .logo-randomtrees { background: linear-gradient(to right, #F9A825, #EF6C00); color: white; padding: 10px 20px; border-radius: 4px; font-size: 14px; }
-        .logo-dadan { color: #5E35B1; }
-        .logo-docsink { color: #0288D1; }
+        /* enablen - green rounded box */
+        .logo-enablen { 
+            color: #8BC34A; 
+            border: 2px solid #8BC34A; 
+            padding: 8px 16px; 
+            border-radius: 8px;
+            font-weight: 400;
+        }
+        
+        /* omni - blue with colored dots */
+        .logo-omni { 
+            color: #000; 
+            font-weight: 400;
+        }
+        .logo-omni::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+        }
+        
+        /* Employee Confidential - teal with icon */
+        .logo-employee { 
+            color: #00838F; 
+            font-size: 11px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        /* eEndorsements - blue with circular icon */
+        .logo-eendorsements { 
+            color: #1976D2; 
+            font-weight: 400;
+        }
+        .logo-eendorsements::before {
+            content: 'e';
+            width: 24px;
+            height: 24px;
+            border: 2px solid #1976D2;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 4px;
+            font-size: 14px;
+        }
+        
+        /* AutoMynd - cyan with sound wave */
+        .logo-automynd { 
+            color: #000; 
+            font-weight: 700;
+        }
+        .logo-automynd::before {
+            content: '|||';
+            color: #26C6DA;
+            margin-right: 8px;
+            font-weight: 700;
+            letter-spacing: -2px;
+        }
+        
+        /* PORTQii - black with red bracket */
+        .logo-portqii { 
+            color: #000; 
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: -1px;
+        }
+        .logo-portqii .red-bracket {
+            color: #D32F2F;
+            font-size: 24px;
+        }
+        
+        /* Datagain - blue "Data" yellow "gain" */
+        .logo-datagain { 
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .logo-datagain .data { color: #1565C0; }
+        .logo-datagain .gain { color: #FFC107; }
+        
+        /* KUBO - blue with box icon */
+        .logo-kubo { 
+            color: #0277BD; 
+            font-weight: 700;
+            font-size: 22px;
+        }
+        .logo-kubo::before {
+            content: '⌗';
+            margin-right: 6px;
+            font-size: 24px;
+        }
+        
+        /* NAMI - navy blue bold */
+        .logo-nami { 
+            color: #1A237E; 
+            font-weight: 700;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        
+        /* ScrambleID - with yellow circle and tagline */
+        .logo-scrambleid { 
+            color: #000; 
+            font-weight: 600;
+            display: flex !important;
+            align-items: center;
+            flex-direction: column;
+            font-size: 16px;
+            justify-content: center;
+        }
+        .logo-scrambleid::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #FFC107;
+            border: 3px solid #000;
+            border-radius: 50%;
+            margin-bottom: 4px;
+        }
+        .logo-scrambleid-tag {
+            font-size: 9px;
+            font-weight: 400;
+            color: #666;
+            margin-top: 2px;
+        }
+        
+        /* Stakater - black with forklift icon */
+        .logo-stakater { 
+            background: #212121; 
+            color: #FFF; 
+            padding: 10px 16px; 
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .logo-stakater::before {
+            content: '⚙';
+            color: #FFC107;
+            margin-right: 6px;
+            font-size: 20px;
+        }
+        
+        /* MADTECH - bold black */
+        .logo-madtech { 
+            color: #000; 
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        
+        /* nexus - minimalist lowercase */
+        .logo-nexus { 
+            color: #424242; 
+            font-weight: 300;
+            font-size: 24px;
+            letter-spacing: -1px;
+        }
+        
+        /* VAMU - spaced blue letters */
+        .logo-vamu { 
+            color: #1E88E5; 
+            font-weight: 300;
+            letter-spacing: 8px;
+            font-size: 20px;
+        }
+        
+        /* TukaTek - black with orange icon */
+        .logo-tukatek { 
+            background: #212121; 
+            color: #FFF; 
+            padding: 10px 16px; 
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .logo-tukatek::before {
+            content: '◢';
+            color: #FF6F00;
+            margin-right: 6px;
+            font-size: 18px;
+        }
+        
+        /* RandomTrees - black/yellow gradient */
+        .logo-randomtrees { 
+            background: linear-gradient(135deg, #212121 0%, #F57C00 100%); 
+            color: #FFF; 
+            padding: 12px 16px; 
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.3;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .logo-randomtrees-sub {
+            font-size: 9px;
+            font-weight: 400;
+            display: block;
+            margin-top: 2px;
+        }
+        
+        /* dadan - purple with elephant icon */
+        .logo-dadan { 
+            color: #5E35B1; 
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .logo-dadan::before {
+            content: '🐘';
+            font-size: 20px;
+            margin-right: 6px;
+        }
+        
+        /* DocsInk - blue with circular icon */
+        .logo-docsink { 
+            color: #0288D1; 
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .logo-docsink::before {
+            content: '◉';
+            margin-right: 6px;
+            font-size: 18px;
+        }
         
         /* About Section */
         .about {
@@ -709,9 +974,9 @@
             <nav>
                 <div class="logo">Mr. Compliance</div>
                 <ul class="nav-links">
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">Compliance Services</a></li>
+                    <li><a href="/penetration-testing.html">Penetration Testing</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#process">Process</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                 </ul>
                 <button class="cta-button" onclick="openContactForm()">Book Consultation</button>
@@ -721,11 +986,11 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Compliance Without the Complexity</h1>
-            <p>Get SOC2, ISO 27001, GDPR, HIPAA, or PCI DSS certified in 8 weeks with dedicated compliance experts who've guided 200+ companies through successful audits.</p>
+            <h1>SOC 2 Audit & ISO 27001 Compliance Services for US Companies</h1>
+            <p>Get SOC 2, ISO 27001, GDPR, HIPAA, or PCI DSS certified in 8 weeks with dedicated compliance experts who've successfully guided 200+ US companies through audits with a 100% pass rate.</p>
             <div class="hero-buttons">
-                <button class="btn-primary" onclick="openContactForm()">Schedule Free Assessment</button>
-                <a href="#process" class="btn-secondary">How It Works</a>
+                <button class="btn-primary" onclick="openContactForm()">Schedule Free SOC 2 Consultation</button>
+                <a href="#process" class="btn-secondary">How Our Audit Process Works</a>
             </div>
         </div>
     </section>
@@ -758,19 +1023,25 @@
                     <div class="logo-item logo-enablen">enablen</div>
                     <div class="logo-item logo-omni">omni</div>
                     <div class="logo-item logo-employee">EMPLOYEE<br>CONFIDENTIAL</div>
-                    <div class="logo-item logo-eendorsements">eEndorsements</div>
+                    <div class="logo-item logo-eendorsements">Endorsements</div>
                     <div class="logo-item logo-automynd">AutoMynd</div>
-                    <div class="logo-item logo-portqii">PORTQii</div>
-                    <div class="logo-item logo-datagain">Datagain</div>
+                    <div class="logo-item logo-portqii">PORT<span class="red-bracket">[</span>ii</div>
+                    <div class="logo-item logo-datagain"><span class="data">Data</span><span class="gain">gain</span></div>
                     <div class="logo-item logo-kubo">KUBO</div>
                     <div class="logo-item logo-nami">NAMI©</div>
-                    <div class="logo-item logo-scrambleid">ScrambleID</div>
+                    <div class="logo-item logo-scrambleid">
+                        ScrambleID
+                        <span class="logo-scrambleid-tag">Only you can be you</span>
+                    </div>
                     <div class="logo-item logo-stakater">Stakater</div>
                     <div class="logo-item logo-madtech">MADTECH</div>
                     <div class="logo-item logo-nexus">nexus</div>
                     <div class="logo-item logo-vamu">V A M U</div>
                     <div class="logo-item logo-tukatek">TukaTek</div>
-                    <div class="logo-item logo-randomtrees">RANDOMTREES<br><span style="font-size:11px">DATA & AI INNOVATIONS</span></div>
+                    <div class="logo-item logo-randomtrees">
+                        RANDOMTREES
+                        <span class="logo-randomtrees-sub">DATA & AI INNOVATIONS</span>
+                    </div>
                     <div class="logo-item logo-dadan">dadan</div>
                     <div class="logo-item logo-docsink">DocsInk</div>
                 </div>
@@ -781,10 +1052,10 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <h2>We're Redefining Compliance Consulting</h2>
-                <p>At Mr. Compliance, we've spent over a decade helping startups and growing companies navigate the complex world of regulatory compliance. After seeing how traditional consulting firms overcomplicate the process with bloated teams and surprise bills, we built a better model.</p>
-                <p>Our approach is simple: transparent pricing, clear timelines, and hands-on expertise. No jargon-filled reports that sit on a shelf. No scope creep that doubles your budget. Just dedicated compliance professionals focused on one goal—getting you certified quickly and affordably.</p>
-                <p><strong>We've successfully guided 200+ companies through SOC2, ISO 27001, PCI DSS, HIPAA, and GDPR certifications with a 100% audit pass rate.</strong></p>
+                <h2>Expert SOC 2 Audit & ISO 27001 Compliance Consulting</h2>
+                <p>At Mr. Compliance, we specialize in SOC 2 audits and ISO 27001 certification for US companies. For over a decade, we've helped startups and growing technology companies navigate complex compliance requirements with transparent pricing and clear timelines.</p>
+                <p>Our SOC 2 audit services include complete gap assessments, policy creation, control implementation, and audit coordination. We guide you through every step of the certification process without the complexity and surprise bills typical of traditional consulting firms.</p>
+                <p><strong>We've successfully completed 200+ SOC 2 audits and ISO 27001 certifications across the United States with a 100% first-time audit pass rate.</strong></p>
             </div>
         </div>
     </section>
@@ -792,63 +1063,69 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2>Services That Actually Get You Certified</h2>
-                <p>Flat-fee pricing. Clear timelines. No surprises.</p>
+                <h2>Compliance Audit Services - SOC 2, ISO 27001, HIPAA & More</h2>
+                <p>Complete audit preparation and certification services with transparent, flat-fee pricing</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🛡️</div>
-                    <h3>SOC 2 Type II</h3>
-                    <p>Complete SOC2 readiness: gap assessment, policy creation, control implementation, evidence collection, and audit coordination. We'll be with you every step of the way.</p>
-                    <div class="service-timeline">⏱️ 8 weeks • Starting at $12,00</div>
+                    <h3>SOC 2 Type II Audit Services</h3>
+                    <p>Complete SOC 2 audit preparation and certification: comprehensive gap assessments, security policy development, control implementation, evidence collection, and full audit coordination. Our SOC 2 consultants ensure your US company achieves certification efficiently.</p>
+                    <div class="service-timeline">⏱️ 8-10 weeks • Starting at $12,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔒</div>
-                    <h3>ISO 27001</h3>
-                    <p>Full ISO 27001 certification support including ISMS development, risk assessments, internal audits, and certification body coordination.</p>
-                    <div class="service-timeline">⏱️ 8 weeks • Starting at $10,00</div>
+                    <h3>ISO 27001 Certification Services</h3>
+                    <p>Full ISO 27001 compliance and certification support including Information Security Management System (ISMS) development, comprehensive risk assessments, internal security audits, and certification body coordination for US businesses.</p>
+                    <div class="service-timeline">⏱️ 10-12 weeks • Starting at $15,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">💳</div>
                     <h3>PCI DSS</h3>
                     <p>Payment security made simple. Get compliant with PCI DSS requirements for secure payment processing and cardholder data protection.</p>
-                    <div class="service-timeline">⏱️ 8 weeks • Starting at $1,900</div>
+                    <div class="service-timeline">⏱️ 6-8 weeks • Starting at $8,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">☁️</div>
                     <h3>Cloud Security</h3>
                     <p>Comprehensive security assessment of your AWS, GCP, or Azure environment with actionable remediation guidance.</p>
-                    <div class="service-timeline">⏱️ 2 weeks • Starting at $1,000</div>
+                    <div class="service-timeline">⏱️ 2-3 weeks • Starting at $5,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">⚖️</div>
                     <h3>GDPR Compliance</h3>
                     <p>Data protection compliance for EU operations: data mapping, privacy policies, consent management, and DPIA support.</p>
-                    <div class="service-timeline">⏱️ 4 weeks • Starting at $1,000</div>
+                    <div class="service-timeline">⏱️ 4-6 weeks • Starting at $7,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🩺</div>
                     <h3>HIPAA Compliance</h3>
                     <p>Healthcare data protection and HIPAA compliance for medical practices, health tech startups, and healthcare providers.</p>
-                    <div class="service-timeline">⏱️ 8 weeks • Starting at $2000</div>
+                    <div class="service-timeline">⏱️ 6-8 weeks • Starting at $10,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
                     <h3>Risk Assessment</h3>
                     <p>Identify vulnerabilities and mitigate risks across your business operations with a tailored approach to assess and manage risks.</p>
-                    <div class="service-timeline">⏱️ 2 weeks • Starting at $8,00</div>
+                    <div class="service-timeline">⏱️ 2-4 weeks • Starting at $4,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔐</div>
                     <h3>NIST Cybersecurity</h3>
                     <p>Our NIST services help you align your organization with this critical framework, protecting against cyber threats.</p>
-                    <div class="service-timeline">⏱️ 6 weeks • Starting at $2,000</div>
+                    <div class="service-timeline">⏱️ 8-10 weeks • Starting at $12,000</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🏛️</div>
                     <h3>CMMC & FedRAMP</h3>
                     <p>CMMC and FedRAMP compliance are essential when dealing with government contracts. We ensure you meet every requirement.</p>
-                    <div class="service-timeline">⏱️ 12 weeks • Custom Pricing</div>
+                    <div class="service-timeline">⏱️ 12-16 weeks • Custom Pricing</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Compliance-Ready Penetration Testing</h3>
+                    <p>Audit-aligned penetration testing with reports auditors accept for SOC 2, ISO 27001, HIPAA, and PCI DSS. Includes free unlimited retesting.</p>
+                    <div class="service-timeline">⏱️ 1-3 weeks • <a href="/penetration-testing.html" style="color: #2563eb; text-decoration: underline;">View Details</a></div>
                 </div>
             </div>
         </div>
@@ -948,16 +1225,17 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Mr. Compliance</h3>
-                    <p>Making compliance simple and affordable for growing companies. Get certified in 8 weeks with 100% audit success rate.</p>
+                    <p>Professional SOC 2 audit and ISO 27001 compliance services for US companies. Get certified in 8 weeks with 100% audit success rate. Serving technology companies nationwide.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Services</h3>
+                    <h3>Audit Services</h3>
                     <ul>
-                        <li><a href="#services">SOC 2 Compliance</a></li>
-                        <li><a href="#services">ISO 27001</a></li>
-                        <li><a href="#services">PCI DSS</a></li>
-                        <li><a href="#services">GDPR</a></li>
-                        <li><a href="#services">HIPAA</a></li>
+                        <li><a href="#services">SOC 2 Audit & Certification</a></li>
+                        <li><a href="#services">ISO 27001 Compliance</a></li>
+                        <li><a href="/penetration-testing.html">Penetration Testing</a></li>
+                        <li><a href="#services">PCI DSS Compliance</a></li>
+                        <li><a href="#services">GDPR Compliance</a></li>
+                        <li><a href="#services">HIPAA Compliance</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
